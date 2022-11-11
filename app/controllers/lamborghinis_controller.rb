@@ -8,8 +8,12 @@ class LamborghinisController < ApplicationController
     end
     
     def show
-        @lamborghini = Lamborghini.find(params[:id])
-        render json: @lamborghini
+        @lamborghini = Lamborghini.find_by(id: params[:id])
+        if @lamborghini
+            render json: @lamborghini
+        else
+            render json: { error: "Lamborghini not found" }, status: :not_found
+        end
     end
     
     def create 
