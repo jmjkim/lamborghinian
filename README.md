@@ -28,9 +28,6 @@ After singed in successfully, user(s) can:
 - Post up to 3 images of a Lamborghini with a description.
 - View how many comments users wrote on Lamborghinis.
 
-## Contributing
-[Jongmin Jack Kim](https://dev.to/jmjkim)
-
 ## References
 1. Resources from Flatiron School Software Engineering Course.
 2. Publicly available articles, lectures, videos from the Internet.
@@ -39,5 +36,8 @@ After singed in successfully, user(s) can:
 [MIT](https://choosealicense.com/licenses/mit/)<br/>
 [Lamborghini Automobili](https://www.lamborghini.com/en-en)
 
+## Contact
+[My dev.to blog](https://dev.to/jmjkim)<br/>
+[Linkedin](https://www.linkedin.com/in/jmjkim/)
 
 # Writing README in process..
