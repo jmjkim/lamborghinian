@@ -42,4 +42,4 @@ After singed in successfully, user(s) can:
 
 ## Contact
 [Linkedin](https://www.linkedin.com/in/jmjkim/)<br/>
-Email: jmjkim00@icloud.com
+Jongmin Jack Kim jmjkim00@icloud.com
