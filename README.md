@@ -32,8 +32,7 @@ After singed in successfully, user(s) can:
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)<br/>
 [Lamborghini Automobili](https://www.lamborghini.com/en-en)
-
-**All of images, logos and other digital resources belongs to the original creator(s).**
+***All of images, logos and other digital resources belongs to the original creator(s).***
 
 ## Contact
 [My dev.to blog](https://dev.to/jmjkim)<br/>
