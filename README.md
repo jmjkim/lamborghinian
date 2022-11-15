@@ -47,7 +47,7 @@ After singed in successfully, user(s) can:
 <br/>
 [Lamborghini Automobili](https://www.lamborghini.com/en-en)
 <br/>
-***All of images, logos and other digital resources belongs to the original creator(s).***
+***I do not claim ownership of images, logos and other digital resources used in this project***
 <br/>
 
 ## Contact
