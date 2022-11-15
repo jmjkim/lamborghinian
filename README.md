@@ -22,9 +22,9 @@ Lamborghini <- Comment -> User
 ```
 ### Features
 After singed in successfully, user(s) can:
-- Read / Write / Edit / Delete comment(s) on different models of Lamborghini.
-- Post up to 3 images of a Lamborghini with a description.
-- View how many comments users wrote on Lamborghinis.
+- _Read / Write / Edit / Delete comment(s) on different models of Lamborghini._
+- _Post up to 3 images of a Lamborghini with a description._
+- _View how many comments users wrote on Lamborghinis._
 
 ## References
 1. Resources from Flatiron School Software Engineering Course.
