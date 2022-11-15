@@ -5,7 +5,7 @@ Lamborghinian is a full-stack appplication for my Phase 4 Project at Flatiron Sc
 <br/>
 
 ## Description
-_Database used_: sqlite3
+Database: sqlite3
 <br/>
 React/Rails for Front/Backend
 <br/>
