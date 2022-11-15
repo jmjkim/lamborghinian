@@ -3,7 +3,8 @@
 # Lamborghinian
 Lamborghinian is a full-stack appplication for my Phase 4 Project at Flatiron School.
 
-## Model Association
+## Description
+**### Model Association:**
 ```
 Lamborghini 
   has_many :comments
