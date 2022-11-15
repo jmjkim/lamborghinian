@@ -21,7 +21,7 @@ User
 
 Lamborghini <- Comment -> User
 ```
-Serializers are used to refine JSON data for backend.
+_Serializers are used for each model to refine JSON data for backend._
 
 <br/>
 
