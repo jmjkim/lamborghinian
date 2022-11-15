@@ -16,6 +16,8 @@ import UserAssociatedLamborghinis from "./components/UserSession/UserAssociatedL
 import NoRouteMatch from "./components/NoRouteMatch"
 
 export default function App() {
+  document.title = "Lamborghinian"
+  
   return (
     <>
       <UserProvider>
