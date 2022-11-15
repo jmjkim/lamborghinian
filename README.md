@@ -5,7 +5,6 @@ Lamborghinian is a full-stack appplication for my Phase 4 Project at Flatiron Sc
 
 ## Description
 Model association:
-
 ```
 Lamborghini 
   has_many :comments
@@ -21,7 +20,6 @@ User
 
 Lamborghini <- Comment -> User
 ```
-
 ### Features
 After singed in successfully, user(s) can:
 - Read / Write / Edit / Delete comment(s) on different models of Lamborghini.
