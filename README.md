@@ -36,7 +36,7 @@ Myself
 2. Publicly available articles, lectures, videos from the Internet.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)<br/>
 [Lamborghini Automobili](https://www.lamborghini.com/en-en)
 
 
