@@ -29,7 +29,7 @@ After singed in successfully, user(s) can:
 - View how many comments users wrote on Lamborghinis.
 
 ## Contributing
-Myself
+[Jongmin Jack Kim](jmjkim00@icloud.com)
 
 ## References
 1. Resources from Flatiron School Software Engineering Course.
