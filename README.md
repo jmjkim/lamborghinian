@@ -22,7 +22,7 @@ User
 Lamborghini <- Comment -> User
 ```
 
-## Features
+### Features
 After singed in successfully, user(s) can:
 - Read / Write / Edit / Delete comment(s) on different models of Lamborghini.
 - Post up to 3 images of a Lamborghini with a description.
