@@ -29,10 +29,15 @@ After singed in successfully, user(s) can:
 - View how many comments users wrote on Lamborghinis.
 
 ## Contributing
+Myself
 
+## References
+1. Resources from Flatiron School Software Engineering Course.
+2. Publicly available articles, lectures, videos from the Internet.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+[Lamborghini Automobili](https://www.lamborghini.com/en-en)
 
 
 # Writing README in process..
