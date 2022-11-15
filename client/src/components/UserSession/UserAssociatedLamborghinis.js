@@ -8,14 +8,20 @@ const UserAssociatedLamborghinis = () => {
     const [ userComments, setUserComments ] = useState([])
     
     useEffect(() => {
-        fetch("/my_activity")
-        .then(r => r.json())
-        .then(data => setUserAssociatedLamborghinis(data))
+        // fetch("/my_activity")
+        // .then(r => r.json())
+        // .then(data => setUserAssociatedLamborghinis(data))
 
         fetch("/usersignedin")
         .then(r => r.json())
-        .then(data => setUserComments(data.comments))
+        .then(data => {
+            // setUserComments(data.comments)
+            setUserAssociatedLamborghinis(data.lamborghinis)
+            setUserComments(data.comments)
+        })
     }, []);
+
+    console.log(userAssociatedLamborghinis)
 
     const displayUserAssociatedLamborghinis = () => {
         return (

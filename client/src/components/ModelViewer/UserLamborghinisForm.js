@@ -11,6 +11,8 @@ const UserLamborghinisForm = ({ username, setFetchFlag }) => {
     const handleUserLamborghiniSubmit = (e) => {
         e.preventDefault()
 
+        const form = document.querySelector("#user_lamborghini_submit_form")
+
         fetch("model_list", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -20,17 +22,20 @@ const UserLamborghinisForm = ({ username, setFetchFlag }) => {
                 img_url1: img_url1,
                 img_url2: img_url2,
                 img_url3: img_url3,
-                description: description + `by ${username}`,
+                description: description + ` by ${username}`,
                 specifications: null,
                 created_by_user: true
             })
         })
         .then(r => r.json())
-        .then(() => setFetchFlag(true))
+        .then(() => {
+            setFetchFlag(true)
+            form.reset()
+        })
     }    
 
     return (
-        <form onSubmit={handleUserLamborghiniSubmit}>
+        <form id="user_lamborghini_submit_form" onSubmit={handleUserLamborghiniSubmit}>
             <h3>Show off your Lamborghinis</h3>
             
             <label>Model</label>

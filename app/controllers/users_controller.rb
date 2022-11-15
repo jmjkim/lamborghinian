@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-    wrap_parameters format: []
     skip_before_action :authorize, only: [:create]
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
 
@@ -10,6 +9,7 @@ class UsersController < ApplicationController
 
     def show
         @user = User.find_by(id: session[:user_id])
+
         if @user
             render json: @user
         else
@@ -17,12 +17,7 @@ class UsersController < ApplicationController
         end
     end
 
-    def display_user_associated_lamborghinis
-        @user_associated_lamborghinis = User.find_by(id: session[:user_id]).lamborghinis.uniq
-        render json: @user_associated_lamborghinis
-    end
-
-
+    
     private
     def render_unprocessable_entity(invalid)
         render json: { error: invalid.record.errors.full_messages }, status: :unprocessable_entity

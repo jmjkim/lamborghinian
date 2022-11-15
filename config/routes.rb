@@ -9,8 +9,6 @@ Rails.application.routes.draw do
   post "/model_list", to: "lamborghinis#create"
   get "/model_list/:id", to: "lamborghinis#show"
 
-  get "/my_activity", to: "users#display_user_associated_lamborghinis"
-
   post "model_list/:id", to: "comments#create"
   patch "model_list/:id/:comment_id", to: "comments#update"
   delete "model_list/:id/:comment_id", to: "comments#destroy"
