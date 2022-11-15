@@ -1,5 +1,3 @@
-# Writing README in process..
-
 # Lamborghinian
 Lamborghinian is a full-stack appplication for my Phase 4 Project at Flatiron School.<br/>
 
