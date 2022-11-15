@@ -43,11 +43,11 @@ After singed in successfully, user(s) can:
 <br/>
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+- [MIT](https://choosealicense.com/licenses/mit/)
 <br/>
-[Lamborghini Automobili](https://www.lamborghini.com/en-en)
+- [Lamborghini Automobili](https://www.lamborghini.com/en-en)
 <br/>
-***All rights of images, logos and other digital resources used in this project reserved to its original creator***
+- ***All rights of images, logos and other digital resources used in this project reserved to its original creator***
 <br/>
 
 ## Contact
