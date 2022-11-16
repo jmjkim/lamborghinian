@@ -19,7 +19,7 @@ User
   has_many :comments
   has_many :lamborghinis, through: :comments
 
-Lamborghini <- Comment -> User
+Lamborghini -< Comment >- User
 ```
 _Serializers are used for each model to refine JSON data for backend._<br/>
 
