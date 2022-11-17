@@ -1,5 +1,5 @@
 # Lamborghinian
-Lamborghinian is a full-stack appplication for my Phase 4 Project at Flatiron School.<br/>
+Lamborghinian is a full-stack web application for my phase 4 software engineering course at Flatiron School. Front-end was built with **React** and **Active Record, SQLite3** for Rails Back-end.
 
 [View app demonstration](https://dev.to/jmjkim/fis-phase-4-project-demonstration-lamborghinian-apd)
 
