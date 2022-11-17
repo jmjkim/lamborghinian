@@ -1,7 +1,7 @@
 # Lamborghinian
 Lamborghinian is a full-stack appplication for my Phase 4 Project at Flatiron School.<br/>
 
-[View demonstration](https://dev.to/jmjkim/fis-phase-4-project-demonstration-lamborghinian-apd)
+[View app demonstration](https://dev.to/jmjkim/fis-phase-4-project-demonstration-lamborghinian-apd)
 
 ## Description
 Database: sqlite3<br/>
