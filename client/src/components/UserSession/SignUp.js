@@ -1,10 +1,7 @@
-// import { useContext, useState } from "react";
 import { useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
-// import { UserContext } from "../../context/user";
 
 const SignUp = () => {
-  // const { signUp } = useContext(UserContext)
   const navigate = useNavigate()
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
@@ -27,7 +24,6 @@ const SignUp = () => {
   .then(data => {
     if (!data.error) {
       alert("User created!")
-      // signUp(data)
       navigate("/")
     }
 

@@ -5,8 +5,11 @@ Rails.application.routes.draw do
   post "/signin", to: "sessions#create"
   delete "/signout", to: "sessions#destroy"
   
+  # resources :lamborghinis 
+
   get "/model_list", to: "lamborghinis#index"
   post "/model_list", to: "lamborghinis#create"
+
   get "/model_list/:id", to: "lamborghinis#show"
 
   post "model_list/:id", to: "comments#create"
