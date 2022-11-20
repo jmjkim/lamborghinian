@@ -16,8 +16,6 @@ const UserAssociatedLamborghinis = () => {
         })
     }, []);
 
-    console.log(userAssociatedLamborghinis)
-
     const displayUserAssociatedLamborghinis = () => {
         return (
             <div className="user_associated_lamborghini_subcontainer">
