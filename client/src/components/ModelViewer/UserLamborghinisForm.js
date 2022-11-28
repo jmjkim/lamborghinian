@@ -13,7 +13,7 @@ const UserLamborghinisForm = ({ username, setFetchFlag }) => {
 
         const form = document.querySelector("#user_lamborghini_submit_form")
 
-        fetch("model_list", {
+        fetch("/user_lamborghinis", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

@@ -9,7 +9,7 @@ const ViewUserLamborghinis = () => {
     const [ fetchFlag, setFetchFlag ] = useState(false)
     
     useEffect(() => {
-        fetch("/model_list")
+        fetch("/user_lamborghinis")
         .then(r => r.json())
         .then(data => {
             setUserLamborghinis(data)
@@ -56,12 +56,14 @@ const ViewUserLamborghinis = () => {
         return (
             <div className="model_list_container">
                 <div className="user_lamborghinis_individual_model_list_container">
-                    {arr.map(obj => obj.created_by_user ?
-                        <div key={obj.id} className="user_lamborghinis_model_list_subcontainer">
-                            {displayLamborghiniName(obj)}
-                            {displayLamborghiniImages(obj)}
-                            {displayLamborghiniDescription(obj)}
-                        </div> : null)}
+                    {arr.map(obj => {
+                        return (
+                            <div key={obj.id} className="user_lamborghinis_model_list_subcontainer">
+                                {displayLamborghiniName(obj)}
+                                {displayLamborghiniImages(obj)}
+                                {displayLamborghiniDescription(obj)}
+                            </div>
+                        )})}
                 </div>
             </div>
         )

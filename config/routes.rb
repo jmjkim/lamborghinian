@@ -6,12 +6,14 @@ Rails.application.routes.draw do
   delete "/signout", to: "sessions#destroy"
 
   get "/model_list", to: "lamborghinis#index"
-  post "/model_list", to: "lamborghinis#create"
   get "/model_list/:id", to: "lamborghinis#show"
-
+  
   post "model_list/:id", to: "comments#create"
   patch "model_list/:id/:comment_id", to: "comments#update"
   delete "model_list/:id/:comment_id", to: "comments#destroy"
+
+  get "/user_lamborghinis", to: "lamborghinis#user_lamborghinis"
+  post "/user_lamborghinis", to: "lamborghinis#create"
 
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!

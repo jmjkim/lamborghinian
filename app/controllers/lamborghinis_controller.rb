@@ -2,8 +2,13 @@ class LamborghinisController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
 
     def index
-        @models = Lamborghini.all
+        @models = Lamborghini.template_model
         render json: @models
+    end
+
+    def user_lamborghinis
+        @user_lamborghinis = Lamborghini.created_by_user
+        render json: @user_lamborghinis
     end
     
     def show

@@ -15,7 +15,7 @@ const ViewModelList = () => {
     }, []);
 
     const modelListDisplayer = (arr, modelName) => {
-        return arr.map(obj => obj.model === modelName && !obj.created_by_user? 
+        return arr.map(obj => obj.model === modelName ? 
             <div key={obj.id} className="individual_model_list_subcontainer">
                 <div className="name_container">
                     <p>{obj.name.toUpperCase()}</p>
