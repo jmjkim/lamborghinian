@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className="signedin_navbar">
                     <img id="lamborghini_logo" onClick={() => navigate("/")} src="https://www.lamborghini.com/sites/it-en/files/themes/custom/lambo_facelift_2019/images/logo.png" alt="lamborghini logo"/>
 
-                    <NavLink to="model_list">
+                    <NavLink to="lamborghinis">
                         View Models
                     </NavLink>
 

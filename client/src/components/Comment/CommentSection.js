@@ -18,7 +18,9 @@ const CommentSection = ({ id, user, setFetchFlag, lamborghini }) => {
     }
 
     const handleDeleteClick = (commentId) => {
-        fetch(`${id}/${commentId}`, {method: "DELETE"})
+        fetch(`/lamborghinis/${id}/comments/${commentId}`, {
+            method: "DELETE"
+        })
         .then(() => setFetchFlag(true))
     }
 
@@ -31,7 +33,7 @@ const CommentSection = ({ id, user, setFetchFlag, lamborghini }) => {
         e.preventDefault()
 
         if (editBtnClicked) {
-            fetch(`${id}/${commentId}`, {
+            fetch(`/lamborghinis/${id}/comments/${commentId}`, {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ comment_input: commentInput })
@@ -45,7 +47,7 @@ const CommentSection = ({ id, user, setFetchFlag, lamborghini }) => {
         }
 
         else {
-            fetch(`${id}`, {
+            fetch(`/lamborghinis/${id}/comments`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({

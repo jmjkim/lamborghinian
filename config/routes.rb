@@ -1,16 +1,13 @@
 Rails.application.routes.draw do
   get "/usersignedin", to: "users#show"
   post "/signup", to: "users#create"
-  
+
   post "/signin", to: "sessions#create"
   delete "/signout", to: "sessions#destroy"
 
-  get "/model_list", to: "lamborghinis#index"
-  get "/model_list/:id", to: "lamborghinis#show"
-  
-  post "model_list/:id", to: "comments#create"
-  patch "model_list/:id/:comment_id", to: "comments#update"
-  delete "model_list/:id/:comment_id", to: "comments#destroy"
+  resources :lamborghinis, only: [:index, :show] do
+    resources :comments, only: [:create, :update, :destroy]
+  end
 
   get "/user_lamborghinis", to: "lamborghinis#user_lamborghinis"
   post "/user_lamborghinis", to: "lamborghinis#create"

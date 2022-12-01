@@ -1,5 +1,5 @@
 class Lamborghini < ActiveRecord::Base
-    scope :template_model, -> { where(created_by_user: !true) }
+    scope :template_model, -> { where(created_by_user: false) }
     scope :created_by_user, -> { where(created_by_user: true) } 
 
     has_many :comments, -> { order(created_at: :desc) }

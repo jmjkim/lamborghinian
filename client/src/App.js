@@ -29,9 +29,10 @@ export default function App() {
           <Route path="/signin" element={<SignIn />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
 
-          <Route path="/model_list" element={<ViewModelList />} />
+          <Route path="/lamborghinis" element={<ViewModelList />} />
+          <Route path="/lamborghinis/:id" element={<ViewModel />} />
+
           <Route path="/user_lamborghinis" element={<ViewUserLamborghinis />} />
-          <Route path="/model_list/:id" element={<ViewModel />} />
           
           <Route path="/my_activity" element={<UserAssociatedLamborghinis />} />
           

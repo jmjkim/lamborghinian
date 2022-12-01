@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
     end
 
     def update
-        @comment = Comment.find(params[:comment_id])
+        @comment = Comment.find(params[:id])
         if @comment
             @comment.update!(comment_params)
             render json: @comment
@@ -17,7 +17,7 @@ class CommentsController < ApplicationController
     end
 
     def destroy
-        @comment = Comment.find(params[:comment_id])
+        @comment = Comment.find(params[:id])
         @comment.destroy
         head :no_content
     end

@@ -20,11 +20,13 @@ const UserAssociatedLamborghinis = () => {
         return (
             <div className="user_associated_lamborghini_subcontainer">
                 {userAssociatedLamborghinis.map(lamborghini => {
-                    let userCommentsOnLamborghini = userComments?.filter(comment => {return comment.lamborghini_id === lamborghini.id})
+                    let userCommentsOnLamborghini = userComments?.filter(comment => {
+                        return comment.lamborghini_id === lamborghini.id
+                    })
                     
                     return (
                         <div key={lamborghini.id} className="user_associated_lamborghini_individual_container">
-                            <NavLink to={`/model_list/${lamborghini.id}`}>
+                            <NavLink to={`/lamborghinis/${lamborghini.id}`}>
                                 <p>{lamborghini.model}</p>
                                 <p>{lamborghini.name}</p>
                             </NavLink>

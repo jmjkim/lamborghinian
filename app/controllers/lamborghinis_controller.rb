@@ -5,19 +5,20 @@ class LamborghinisController < ApplicationController
         @models = Lamborghini.template_model
         render json: @models
     end
-
-    def user_lamborghinis
-        @user_lamborghinis = Lamborghini.created_by_user
-        render json: @user_lamborghinis
-    end
     
     def show
-        @lamborghini = Lamborghini.find_by(id: params[:id])
+        @lamborghini = Lamborghini.find(params[:id])
+        
         if @lamborghini
             render json: @lamborghini
         else
             render json: { error: "Lamborghini not found" }, status: :not_found
         end
+    end
+
+    def user_lamborghinis
+        @user_lamborghinis = Lamborghini.created_by_user
+        render json: @user_lamborghinis
     end
     
     def create 

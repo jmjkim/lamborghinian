@@ -12,7 +12,8 @@ const ViewModel = () => {
     const [ fetchFlag, setFetchFlag ] = useState(false)
     
     useEffect(() => {
-        fetch(`/model_list/${id}`)
+        // fetch(`/model_list/${id}`)
+        fetch(`/lamborghinis/${id}`)
         .then(r => r.json())
         .then(data => {
             if (!data.error) {

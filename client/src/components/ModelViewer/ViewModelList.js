@@ -9,7 +9,8 @@ const ViewModelList = () => {
     const navigate = useNavigate()
     
     useEffect(() => {
-        fetch("/model_list")
+        // fetch("/model_list")
+        fetch("/lamborghinis")
         .then(r => r.json())
         .then(setModels)
     }, []);
