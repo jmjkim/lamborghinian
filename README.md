@@ -25,6 +25,19 @@ Lamborghini -< Comment >- User
 ```
 _Serializers are used for each model to refine JSON data for backend._<br/>
 
+
+### Setup
+Run the following commands to install gems and launch the app.
+
+bundle install
+npm install --prefix client
+
+rails db:create db:migrate db:seed
+
+rails s
+npm start --prefix client
+<br/>
+
 ### Features
 After singed in successfully, user(s) can:
 - _Read / Write / Edit / Delete comment(s) on different models of Lamborghini._
