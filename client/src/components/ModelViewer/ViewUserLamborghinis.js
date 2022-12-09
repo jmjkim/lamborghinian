@@ -1,21 +1,10 @@
 import { UserContext } from "../../context/user"
-import { useState, useEffect, useContext } from "react"
+import { useContext } from "react"
 
 import UserLamborghinisForm from "./UserLamborghinisForm"
 
-const ViewUserLamborghinis = () => {
+const ViewUserLamborghinis = ({userLamborghinis, setFetchFlag}) => {
     const { user, userSignedIn } = useContext(UserContext)
-    const [ userLamborghinis, setUserLamborghinis ] = useState([])
-    const [ fetchFlag, setFetchFlag ] = useState(false)
-    
-    useEffect(() => {
-        fetch("/user_lamborghinis")
-        .then(r => r.json())
-        .then(data => {
-            setUserLamborghinis(data)
-            setFetchFlag(false)
-        })
-    }, [fetchFlag]);
 
     const displayCreateLamborghiniForm = () => {
         return (

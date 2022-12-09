@@ -8,7 +8,8 @@ class CommentsController < ApplicationController
 
     def update
         @comment = Comment.find(params[:id])
-        if @comment
+
+        if @comment.user_id == session[:user_id]
             @comment.update!(comment_params)
             render json: @comment
         else
@@ -18,8 +19,11 @@ class CommentsController < ApplicationController
 
     def destroy
         @comment = Comment.find(params[:id])
-        @comment.destroy
-        head :no_content
+        
+        if @comment.user_id == session[:user_id]
+            @comment.destroy
+            head :no_content
+        end
     end
 
 

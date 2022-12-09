@@ -1,29 +1,13 @@
-import { useState, useEffect, useContext } from "react"
+import { useContext } from "react"
 import { useParams } from "react-router-dom";
 import { UserContext } from "../../context/user";
 
 import CommentSection from "../Comment/CommentSection"
 
-const ViewModel = () => {
+const ViewModel = ({lamborghinis, fetchError, setFetchFlag}) => {
     const { id } = useParams()
     const { user, userSignedIn } = useContext(UserContext)
-    const [ lamborghini, setLamborghini ] = useState({})
-    const [ fetchError, setFetchError ] = useState("")
-    const [ fetchFlag, setFetchFlag ] = useState(false)
-    
-    useEffect(() => {
-        fetch(`/lamborghinis/${id}`)
-        .then(r => r.json())
-        .then(data => {
-            if (!data.error) {
-                setLamborghini(data)
-                setFetchFlag(false)
-            }
-
-            else 
-                setFetchError(data.error)
-            })
-        }, [id, fetchFlag]);
+    const lamborghini = Object.values(lamborghinis).find(lambo => lambo.id === parseInt(id))
 
     const displayModelSpecifications = () => {
         return (

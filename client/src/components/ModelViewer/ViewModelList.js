@@ -1,18 +1,10 @@
-import { useState, useEffect, useContext } from "react"
+import { useContext } from "react"
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/user";
 
-const ViewModelList = () => {
+const ViewModelList = ({lamborghinis}) => {
     const { userSignedIn } = useContext(UserContext)
-    const [ models, setModels ] = useState([])
-
     const navigate = useNavigate()
-    
-    useEffect(() => {
-        fetch("/lamborghinis")
-        .then(r => r.json())
-        .then(setModels)
-    }, []);
 
     const modelListDisplayer = (arr, modelName) => {
         return arr.map(obj => obj.model === modelName ? 
@@ -32,22 +24,22 @@ const ViewModelList = () => {
 
     return (
         <>
-            {models.length > 0 && userSignedIn ? 
+            {lamborghinis.length > 0 && userSignedIn ? 
                 <>
                     <div className="model_list_container">
                         <h2>AVENTADOR</h2>
                         <div className="individual_model_list_container">
-                            {modelListDisplayer(models, "aventador")}
+                            {modelListDisplayer(lamborghinis, "aventador")}
                         </div>
 
                         <h2>HURACAN</h2>
                         <div className="individual_model_list_container">
-                            {modelListDisplayer(models, "huracan")}
+                            {modelListDisplayer(lamborghinis, "huracan")}
                         </div>
 
                         <h2>URUS</h2>
                         <div className="individual_model_list_container">
-                            {modelListDisplayer(models, "urus")}
+                            {modelListDisplayer(lamborghinis, "urus")}
                         </div>
                     </div>
                 </> : <h1>Nothing to display</h1>}

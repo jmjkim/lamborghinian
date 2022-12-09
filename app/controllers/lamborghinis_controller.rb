@@ -27,13 +27,6 @@ class LamborghinisController < ApplicationController
     end
 
 
-    # def assessment_function
-    #     @found = Lamborghini.created_by_user.select {|lamborghini| lamborghini.description.include?(params[:assessment_params])}
-    #     render json: @found
-    # end
-
-
-
     private
     def render_unprocessable_entity(invalid)
         render json: { error: invalid.record.errors.full_messages }, status: :unprocessable_entity
