@@ -41,19 +41,19 @@ npm start --prefix client
 <br/>
 
 ### Features
-After singed in successfully, user(s) can:
-- _Read / Write / Edit / Delete comment(s) on different models of Lamborghini._
-- _Post up to 3 images of a Lamborghini with a description._
-- _View how many comments users wrote on Lamborghinis._<br/>
+After singed in successfully, users can:
+- _Read / Write / Edit / Delete comments on different models of Lamborghini_
+- _Post up to 3 images of a Lamborghini with a description_
+- _View how many comments users wrote on Lamborghinis_<br/>
 
 ## References
-1. Resources from Flatiron School Software Engineering Course.
-2. Publicly available articles, lectures, videos from the Internet.<br/>
+1. Resources from Flatiron School Software Engineering Course
+2. Publicly available articles, lectures, videos from the Internet<br/>
 
 ## License
 - [MIT](https://choosealicense.com/licenses/mit/)<br/>
 - [Lamborghini Automobili](https://www.lamborghini.com/en-en/)<br/>
-- All rights of images, logos and other digital resources used in this project reserved to its original creator.<br/>
+- All rights of images, logos and other digital resources used in this project reserved to its original creator<br/>
 
 ## Contact
 [Linkedin](https://www.linkedin.com/in/jmjkim/)<br/>
